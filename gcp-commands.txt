@@ -1,5 +1,5 @@
-# GCLOUD COMMANDS - If using GCP provider
-# Preform run these in Cloud Shell terminal before running Terraform Commands
+# GCLOUD COMMANDS - If using GCP provider in sandbox/playground env
+# Run these in Cloud Shell terminal before running Terraform Commands
 
 # Lists authorized accounts in terminal; your account should pop up
 gcloud auth list
@@ -20,7 +20,10 @@ gcloud config set project <PROJECT_ID>
 # !!! ONLY IF 1ST 2 STEPS DIDN'T WORK ON LINES 5 & 7: Authorize you account in gcloud to perform commands in Cloud Shell !!!
 gcloud auth login
 
+# If already authenticated, it will state it here. Read the prompt and type "y"
+# Link will popup. Copy it to a new tab
 # Will pop up login screen
-# Input login credentials 
-# Will ask if you want to authorize gcloud, click accept/continue
-# Return to terminal to perform remaining commands from LINE 5
+# Click on your account OR Input login credentials 
+# Will ask if you want to authorize Google Cloud SDK (gcloud), click ALLOW
+# Copy the verification code and return to terminal to paste it after authorization code
+# Return to LINE 5 to run the gcloud commands
