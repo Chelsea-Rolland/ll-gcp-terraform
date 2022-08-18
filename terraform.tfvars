@@ -9,6 +9,5 @@ vm_instance_machine_type = "f1-micro"
 resoucre_tags = {
   env      = "dev"
   project  = "terraform-gcp-demo"
-  owner    = "student-04-5e90104a3209@qwiklabs.net"
   location = "web"
 }
