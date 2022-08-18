@@ -9,13 +9,14 @@ terraform validate
 # Terraform plan: Review the changes TF will make to your infrastructure; creates state file
 terraform plan
 # Flags: -var-file: will pull the values from tfvars file & -out: will take tf plan and make it into a file
-terraform plan -var-file="terraform.tfvars" -out="terraform-plan.tfplan"
+terraform plan -var-file="<VAR-FILE-NAME>.tfvars" -out="<PLAN-FILE-NAME>.tfplan"
 
 # Terraform apply: TF provisions your infrastructure and updates the state file
 terraform apply
 # with plan file
-terraform apply "<plan-file-name>.tfplan"
+terraform apply "<PLAN-FILE-NAME>.tfplan"
 
 # Terraform destroy: Destroys previously created infrastructure; state file is required
 terraform destroy
-
+# with tfvars file
+terraform destroy -var-file="<VAR-FILE-NAME>.tfvars"
