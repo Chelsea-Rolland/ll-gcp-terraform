@@ -1,4 +1,4 @@
-# GCLOUD COMMANDS - If usisng GCP provider
+# GCLOUD COMMANDS - If using GCP provider
 # Preform run these in Cloud Shell terminal before running Terraform Commands
 
 # Lists authorized accounts in terminal; your account should pop up
