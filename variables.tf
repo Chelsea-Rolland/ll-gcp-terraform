@@ -49,3 +49,9 @@ variable "resoucre_tags" {
   type        = map(string)
   description = "Tags to set for all VM Resources"
 }
+
+variable "location" {
+  type        = string
+  description = "Bucket Location Continent"
+  default     = "US"
+}
