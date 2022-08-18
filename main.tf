@@ -46,6 +46,7 @@ module "cloud-storage" {
   names      = [var.bucket_name]
   prefix     = "demo"
   project_id = var.project_id
+  location   = var.location
   lifecycle_rules = [{
     condition = {
       age = 5
